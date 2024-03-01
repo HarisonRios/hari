@@ -9,6 +9,7 @@ import SpotifyCard from "./components/commons/spotifycard";
 import TecCard from "./components/commons/teccard";
 import MeCard from "./components/commons/mecard";
 import ContactmeCard from "./components/commons/contactmecard";
+ 
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <LocationCard/>
         <TimeCard/> 
         <GithubCard/>
+        
         <ProjectCard/>
         <SpotifyCard/>
         <TecCard/>
