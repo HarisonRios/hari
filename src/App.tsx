@@ -23,7 +23,6 @@ function App() {
         <LocationCard/>
         <TimeCard/> 
         <GithubCard/>
-        
         <ProjectCard/>
         <SpotifyCard/>
         <TecCard/>
