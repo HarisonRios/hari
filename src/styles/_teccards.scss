@@ -1,0 +1,29 @@
+.content-6 {
+    width: 280px;
+    height: 237px;
+    display: grid;
+    padding: 1rem;
+    color: #c6e2ff;
+
+    svg{
+        margin: 12px;
+        align-items: center;
+    }
+}
+
+.tecnolgy{
+    margin-top: 18px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .content-6 {
+      position: relative;
+      right: 270px;
+      top: 400px;
+      z-index: 999;
+      width: 290px;
+      height: 237px;
+    }
+  }

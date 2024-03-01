@@ -1,0 +1,49 @@
+.content-4 {
+    height: 200px;
+    width: 574px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.1, 0, 0.1, 1);
+    transition-duration: 500ms;
+    transition-duration: 600ms;
+    background-image: url('../../public/github.gif');
+    background-size: 574px;
+    background-repeat: no-repeat;
+    text-shadow: 0 0 5px #131e30, 0 0 15px #131e30, 0 0 20px #131e30, 0 0 40px #131e30, 0 0 60px #031738, 0 0 10px #afc4e5, 0 0 98px #83878d;
+}
+
+.content-4:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../public/github.gif');
+    background-size: 574px;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px, rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.icons{
+    #github{
+        position: relative;
+        left: 25px;
+        top: 12px;
+        height: 30px;
+        width: 30px;
+        color: #ffffff;
+    }
+    
+
+    #arrow{
+        margin: 2px;
+        position: relative;
+        left: 0.5px;
+        top: 6px;
+    }
+
+    h2{
+        position: relative;
+        top: 95px;
+        margin: 20px;
+        font-size: 1.2rem;
+        
+        
+    }
+}

@@ -1,0 +1,23 @@
+.footer {
+    background-color: #330e4928;
+    height: 450px;
+    width: 800px;
+    position: relative;
+    padding-top: 250px;
+    overflow: hidden;
+
+svg{ 
+  position: relative;
+  top: 130px;
+  left: 300px;
+  color: #c6e2ff;
+  padding: 11px;
+}
+ 
+svg:hover{
+  color:  #9400d3;
+  transition: 0.5%;
+  cursor: pointer; 
+}
+
+}

@@ -1,0 +1,54 @@
+.sidebar {
+    width: 480px;
+    height: 237px;
+    z-index: 999;
+    box-shadow: 0 0 20px, rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1rem;
+    color: #ffffff;;
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.1, 0, 0.1, 1);
+    transition-duration: 500ms;
+    transition-duration: 600ms;
+
+  }
+  
+  
+.sidebar:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+.music{
+  font-family: "Poppins", sans-serif;
+}
+  
+  
+.icons{
+  #spotify{
+    z-index: 999;
+      position: relative;
+      left: 10px;
+      bottom: 225px;
+      height: 20px;
+      width: 20px;
+      color: #ffffff;
+  }
+  
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 320px;
+    height: 100px;
+    left: 240px;
+  }
+}

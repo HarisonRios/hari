@@ -1,0 +1,96 @@
+.header {
+    background-color: #330e4928;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.1, 0, 0.1, 1);
+    transition-duration: 500ms;
+    transition-duration: 600ms;
+}
+
+.header:hover {
+    box-shadow: 0 0 20px, rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.introduction {
+    text-shadow: 0 0 5px #9400d3 , 0 0 15px #9400d3 , 0 0 20px #9400d3 , 0 0 40px #9400d3 , 0 0 60px #9400d3 , 0 0 10px #ff00d9 , 0 0 98px #ff00d9;
+    color: #ffffff;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    margin: 0;
+
+
+    h1 {
+        font-size: 3rem;
+        line-height: 1.75rem;
+        margin-top: 8rem;
+        margin-left: 2.5rem;
+    }
+
+    h2 {
+        margin: 8px;
+        font-size: 1rem;
+        margin-left: 2.7rem;
+    }
+
+    a{
+        color: inherit;
+    }
+
+    svg{
+        left: 28rem;
+        bottom: 2rem;
+        position: relative;
+        text-decoration: none;
+
+    }
+}
+
+
+
+@-webkit-keyframes blink {
+
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+
+        text-shadow: 0 0 5px #9400d3 , 0 0 15px #9400d3 , 0 0 20px #9400d3 , 0 0 40px #9400d3 , 0 0 60px #9400d3 , 0 0 10px #ff00d9, 0 0 98px #ff00d9;
+        color: #fff6a9;
+    }
+}
+
+@keyframes blink {
+
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+
+        text-shadow: 0 0 5px #9400d3 , 0 0 15px #9400d3 , 0 0 20px #9400d3 , 0 0 40px #9400d3 , 0 0 60px #9400d3 , 0 0 10px #ff00d9, 0 0 98px #ff00d9;
+        color: #fff6a9;
+    }
+}
