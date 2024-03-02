@@ -13,8 +13,6 @@ function ProjectCard() {
     <h2>Projetos</h2>
     </div>
     </Link>
-    
-
     </>
   )
 }
