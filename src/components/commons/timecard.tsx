@@ -7,19 +7,19 @@ function ImagemComBaseNoHorario() {
   let imagem;
   if (horaAtual >= 6 && horaAtual < 12) {
     // Manhã
-    imagem = <img src="../../public/morning.png" alt="Manhã" />;
+    imagem = <img src="../../public/time/morning.png" alt="Manhã" />;
   } 
   else if (horaAtual >= 12 && horaAtual < 19) {
     // Tarde
-    imagem = <img src="../../public/evening.png" alt="Tarde" />;
+    imagem = <img src="../../public/time/evening.png" alt="Tarde" />;
   } 
   else if (horaAtual >= 19 && horaAtual < 24){
     // Noite
-    imagem = <img src="../../public/night.png" alt="Noite" />;
+    imagem = <img src="../../public/time/night.png" alt="Noite" />;
   }
   else{
     // Madrugada
-    imagem = <img src="../../public/dawn.png" alt="Madrugada" />;
+    imagem = <img src="../../public/time/dawn.png" alt="Madrugada" />;
   }
   return (
     <div className="item content-3">

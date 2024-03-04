@@ -29,17 +29,17 @@ function SpotifyCard() {
 
 const tracks = [
   {
-    url: "../../public/piano.mp3",
+    url: "../../public/music/piano.mp3",
     title: "Sweden - Minecraft",
     tags: ["Sweden"],
   },
   {
-    url: "../../public/classic.mp3",
+    url: "../../public/music/classic.mp3",
     title: "C418 - Minecraft",
     tags: ["C418"],
   },
   {
-    url: "../../public/classic2.mp3",
+    url: "../../public/music/classic2.mp3",
     title: "Subwoofer - Minecraft",
     tags: ["Subwoofer"],
   },
