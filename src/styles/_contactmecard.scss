@@ -3,22 +3,87 @@
     height: 450px;
     width: 800px;
     position: relative;
-    padding-top: 250px;
+    padding-top: 200px;
     overflow: hidden;
 
-svg{ 
+
+  a{ 
+    position: relative;
+    top: 190px;
+    right: 200px;
+  }
+
+  svg{
+    color: #c6e2ff;
+    padding: 11px; 
+  }
+  
+  
+  svg:hover{
+    color:  #9400d3;
+    transition: 0.5%;
+    cursor: pointer; 
+  }
+
+}
+
+
+.form{
   position: relative;
-  top: 130px;
-  left: 300px;
-  color: #c6e2ff;
-  padding: 11px; 
+  left: 150px;
+  bottom: 170px;
+  display: flex;
+  width: 500px;
+  height: 400px;
+  flex-direction: column;
 
-}
- 
-svg:hover{
-  color:  #9400d3;
-  transition: 0.5%;
-  cursor: pointer; 
+
+
+  h2{
+    margin: 2px;
+    position: relative;
+    left: 120px;
+    margin-bottom: 20px;
+
+  }
 }
 
+.input{
+  margin-bottom: 14px;
+  height: 34px;
+  border-radius: 5px;
+  border: 0;
+  padding: 0 8px;
+  color: black;
+  border: solid 2px #9400d3;
+}
+
+.textarea{
+  margin-bottom: 14px;
+  border-radius: 5px;
+  border: 0;
+  padding: 8px;
+  height: 94px;
+  color: black;
+  resize: none;
+  border: solid 2px #9400d3;
+}
+
+
+.button{
+  height: 34px;
+  width: 120px;
+  border-radius: 5px;
+  position: relative;
+  left: 380px;
+  border: 0;
+  cursor: pointer;
+  background-color: #7101b26f;
+  font-size: 20px;
+  transition: background-color, transform 0.8s;
+}
+
+.button:hover{
+  background-color: #3802576d;
+  transform: scale(1.01);
 }

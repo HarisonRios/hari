@@ -6,25 +6,98 @@ import {
   FaDiscord,
 } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
-// import resume from '../../../public/cv.pdf';
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+
+function ContactmeCard() {
+
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
+function sendEmail(e: { preventDefault: () => void; }){
+  e.preventDefault();
+  
+  if(name === '' || email === '' || message === ''){
+    alert("Prencha todos os campos");
+    return;
+  }
+
+  const templateParams = {
+    from_name: name,
+    message: message,
+    email: email
+  }
+
+emailjs.send("service_8vyp68t", "template_ofgphb1", templateParams, "KNMpzbiR9gngVz57L")
+.then((response) =>{
+  console.log("Email enviado com sucesso", response.status, response.text)
+  setName('')
+  setEmail('')
+  setMessage('')
+
+
+}, (err) => {
+  console.log("Email não foi enviado - ERROR: ", err)
+})
+}
+ 
 
 
 
-  function  ContactmeCard() {
-    return (
-      <>
+  return (
+
+    <> 
     <div className="item footer"> 
 
-    {/* <a href={resume} download={resume}><p> Baixar Curriculo</p></a> */}
+      <form className="form" onSubmit={(sendEmail)}>
+        <h2>Vamos Conversar</h2>
+        <input 
+          className="input"
+          type="text"
+          placeholder="Digite seu nome"
+          onChange={(e) => setName(e.target.value)}
+          value={name}
+        />
+        
+        <input 
+          className="input"
+          type="text"
+          placeholder="Digite seu email"
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
+        />
+
+        <textarea 
+          className="textarea"
+          placeholder="Digite sua mensagem..."
+          onChange={(e) => setMessage(e.target.value)}
+          value={message}
+        />
+
+        <input className="button" type="submit" value="Enviar" />
+        
+    
+      </form>
+
+
+ 
+
     <a href="mailto:email@provedor.com.br" target="_blank"> <MdOutlineMailOutline size={45}/> </a>
     <a href="https://github.com/HarisonRios" target="_blank"> <FaGithub size={45}/> </a>
     <a href="https://www.linkedin.com/in/harison-rios-046731235/" target="_blank"> <FaLinkedin size={45}/> </a> 
     <a href="https://www.instagram.com/harison_rioos/" target="_blank"> <FaInstagram size={45} /> </a>
-    <a href="https://discord.com/users/hariisu_" target="_blank"> <FaDiscord size={45}/> </a>
-    </div>     
-      </>
-    )
-  }
+    <a href="https://discord.com/users/hariisu_" target="_blank"> <FaDiscord size={45}/> </a>  
+    </div>
+    </>  
+  );
+}
+
+
+export default ContactmeCard;
+
+
   
-  export default ContactmeCard
-  
+  // import resume from '../../../public/cv.pdf';
+  // <a href={resume} download={resume}><p> Baixar Curriculo</p></a>  
