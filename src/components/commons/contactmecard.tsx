@@ -8,27 +8,48 @@ import {
 import { MdOutlineMailOutline } from "react-icons/md";
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 
 function ContactmeCard() {
+  
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
+  const handleClick = () => {
+    Swal.fire({
+        backdrop: `rgba(51, 14, 73, 0.263)`,
+        title: 'Obrigado!',
+        text: 'Sua mensagem foi enviado com sucesso.',
+        icon: 'success',
+        confirmButtonText: 'Voltar'
+    });
+};
+
 function sendEmail(e: { preventDefault: () => void; }){
   e.preventDefault();
   
+  
   if(name === '' || email === '' || message === ''){
-    alert("Prencha todos os campos");
+    Swal.fire({
+      backdrop: `rgba(51, 14, 73, 0.263)`,
+      title: 'Por favor !',
+      text: 'Prencha o formulario',
+      icon: 'error',
+      confirmButtonText: 'Voltar'
+  });
     return;
   }
+
 
   const templateParams = {
     from_name: name,
     message: message,
     email: email
   }
+
 
 emailjs.send("service_8vyp68t", "template_ofgphb1", templateParams, "KNMpzbiR9gngVz57L")
 .then((response) =>{
@@ -44,14 +65,14 @@ emailjs.send("service_8vyp68t", "template_ofgphb1", templateParams, "KNMpzbiR9gn
 }
  
 
-
-
   return (
 
     <> 
     <div className="item footer"> 
 
-      <form className="form" onSubmit={(sendEmail)}>
+      <form className="form" onSubmit={(sendEmail)} id="meuFormulario">
+
+
         <h2>Vamos Conversar</h2>
         <input 
           className="input"
@@ -76,13 +97,11 @@ emailjs.send("service_8vyp68t", "template_ofgphb1", templateParams, "KNMpzbiR9gn
           value={message}
         />
 
-        <input className="button" type="submit" value="Enviar" />
         
-    
+
+        <input className="button" type="submit" value="Enviar" onClick={handleClick}/>
       </form>
 
-
- 
 
     <a href="mailto:email@provedor.com.br" target="_blank"> <MdOutlineMailOutline size={45}/> </a>
     <a href="https://github.com/HarisonRios" target="_blank"> <FaGithub size={45}/> </a>
@@ -91,8 +110,11 @@ emailjs.send("service_8vyp68t", "template_ofgphb1", templateParams, "KNMpzbiR9gn
     <a href="https://discord.com/users/hariisu_" target="_blank"> <FaDiscord size={45}/> </a>  
     </div>
     </>  
+
+    
   );
 }
+
 
 
 export default ContactmeCard;
