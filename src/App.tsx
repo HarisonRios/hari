@@ -1,4 +1,4 @@
-import "./styles/_main.scss";
+    import "./styles/_main.scss";
 import IntroCard from "./components/commons/introcard";
 import InstaCard from "./components/commons/instacard";
 import LocationCard from "./components/commons/locationcard";

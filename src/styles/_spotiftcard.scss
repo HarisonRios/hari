@@ -1,7 +1,6 @@
 .sidebar {
     width: 480px;
     height: 237px;
-    z-index: 999;
     box-shadow: 0 0 20px, rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -44,11 +43,9 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .sidebar {
-    position: relative;
-    width: 320px;
-    height: 100px;
-    left: 240px;
+    width: 470px;
+    height: 80px;
   }
 }

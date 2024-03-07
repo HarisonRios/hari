@@ -12,8 +12,6 @@ import Swal from 'sweetalert2';
 
 
 function ContactmeCard() {
-  
-
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -121,5 +119,3 @@ export default ContactmeCard;
 
 
   
-  // import resume from '../../../public/cv.pdf';
-  // <a href={resume} download={resume}><p> Baixar Curriculo</p></a>  

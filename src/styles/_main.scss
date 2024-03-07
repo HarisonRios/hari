@@ -29,6 +29,7 @@ main{
 
 
 .container {
+    position: relative;
     animation: fade-in 2s;
     display: grid;
     width: 800px;
@@ -44,6 +45,8 @@ main{
         "content-7 content-7 content-7"
         "footer footer footer";
 }
+
+
 
 
 .item {
