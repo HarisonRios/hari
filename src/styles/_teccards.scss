@@ -1,18 +1,11 @@
-.content-6 {
-    width: 280px;
+.tec-card {
     height: 237px;
     display: grid;
-    padding: 1rem;
+    place-content: center;
+    // padding: 1rem; 
     color: #c6e2ff;
 
     svg{
         margin: 12px;
-        align-items: center;
-    
     }
 }
-
-.tecnolgy{
-    margin-top: 18px;
-}
-

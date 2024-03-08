@@ -1,4 +1,4 @@
-    import "./styles/_main.scss";
+import "./styles/_main.scss";
 import IntroCard from "./components/commons/introcard";
 import InstaCard from "./components/commons/instacard";
 import LocationCard from "./components/commons/locationcard";
@@ -9,15 +9,11 @@ import SpotifyCard from "./components/commons/spotifycard";
 import TecCard from "./components/commons/teccard";
 import MeCard from "./components/commons/mecard";
 import ContactmeCard from "./components/commons/contactmecard";
- 
-
-
 
 function App() {
   return (
-    <>
     <main>
-        <div className="container">
+      <div className="container">
         <IntroCard/>
         <InstaCard/>
         <LocationCard/>
@@ -30,8 +26,6 @@ function App() {
         <ContactmeCard/>
       </div>
     </main>
-
-    </>
   )
 }
 

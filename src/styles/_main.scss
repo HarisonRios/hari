@@ -1,113 +1,105 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-	user-select: none;
-    color: #ffffff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.100), rgba(0, 0, 0, 0.900)), url('bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
-    padding: 60px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.100), rgba(0, 0, 0, 0.900)), url('bg.jpg'
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  font-family: "Poppins", sans-serif;
+  padding: 60px;
+
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
 }
-
-main{
-    height: 1800px;
-}
-
-
 
 .container {
-    position: relative;
-    animation: fade-in 2s;
-    display: grid;
-    width: 800px;
-    height: 1500px;
-    grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: 200px 1fr 1fr 200px;
-    grid-gap: 1.5rem;
+  margin-inline: auto;
+  max-width: 800px;
+  // animation: fade-in 2s;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1.5rem;
+
+  @media (min-width: 600px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 250px 1fr 200px;
     grid-template-areas:
-        "header header content-1"
-        "content-2 content-2 content-3"
-        "content-5 content-4 content-4"
-        "sidebar sidebar content-6"
-        "content-7 content-7 content-7"
-        "footer footer footer";
+      "intro-card     intro-card     insta-card"
+      "location-card  location-card  time-card"
+      "project-card   github-card    github-card"
+      "spotify-card   spotify-card   tec-card"
+      "me-card        me-card        me-card"
+      "contact-card   contact-card   contact-card";
+
+    .intro-card {
+        grid-area: intro-card;
+    }
+    
+    .spotify-card {
+        grid-area: spotify-card;
+    }
+    
+    .insta-card {
+        grid-area: insta-card;
+    }
+    
+    .location-card {
+        grid-area: location-card;
+    }
+    
+    .time-card {
+        grid-area: time-card;
+    }
+    
+    .github-card {
+        grid-area: github-card;
+    }
+    
+    .project-card {
+        grid-area: project-card;
+    }
+    
+    .tec-card {
+        grid-area: tec-card;
+    }
+    
+    .me-card {
+        grid-area: me-card;
+    }
+    
+    .contact-card {
+        grid-area: contact-card;
+    }
+  }
 }
-
-
-
 
 .item {
     background: rgba(19, 30, 48, 0.15);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 1rem;
-    display: flex;
-    font-size: 18px;
+
     color: #ffffff;
+    border-radius: 1rem;
+    font-size: 18px;
 }
-
-
-
-.header {
-    grid-area: header;
-
-}
-
-.sidebar {
-    grid-area: sidebar;
-}
-
-.content-1 {
-    grid-area: content-1;
-}
-
-.content-2 {
-    grid-area: content-2;
-}
-
-.content-3 {
-    grid-area: content-3;
-}
-
-.content-4 {
-    grid-area: content-4;
-}
-
-.content-5 {
-    grid-area: content-5;
-}
-
-.content-6 {
-    grid-area: content-6;
-}
-
-.content-7 {
-    grid-area: content-7;
-}
-
-
-.footer {
-    grid-area: footer;
-}
-
-
-
 
 @keyframes fade-down {
     0% {
@@ -133,27 +125,23 @@ main{
     }
 }
 
+// ::-webkit-scrollbar {
+//     width: 12px;
+// }
   
-::-webkit-scrollbar {
-    width: 12px;
-  }
+// ::-webkit-scrollbar-track {
+//     background:  #e0e0e0;
+//     border-radius: 1px;
+// }
   
- ::-webkit-scrollbar-track {
-    background:  #e0e0e0;
-    border-radius: 1px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #131e30;
-    border-radius: 1px;
-  }
-
-
+// ::-webkit-scrollbar-thumb {
+//     background: #131e30;
+//     border-radius: 1px;
+// }
 
 @supports not selector(::-webkit-scrollbar) {
-    body {
-      scrollbar-color: #131e30
-                       #e0e0e0
-    }
+  body {
+    scrollbar-color: #131e30
+                      #e0e0e0
   }
-
+}

@@ -1,12 +1,13 @@
-.header {
-    background-color: #330e4928;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.1, 0, 0.1, 1);
-    transition-duration: 500ms;
-    transition-duration: 600ms;
+.intro-card {
+    position: relative;
+    background-color: hsla(278, 68%, 17%, 0.157);
+    transition: all 600ms cubic-bezier(0.1, 0, 0.1, 1);
+
+    display: grid;
+    place-items: center;
 }
 
-.header:hover {
+.intro-card:hover {
     box-shadow: 0 0 20px, rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -16,16 +17,14 @@
 .introduction {
     text-shadow: 0 0 5px #9400d3 , 0 0 15px #9400d3 , 0 0 20px #9400d3 , 0 0 40px #9400d3 , 0 0 60px #9400d3 , 0 0 10px #ff00d9 , 0 0 98px #ff00d9;
     color: #ffffff;
-    animation: blink 12s infinite;
-    -webkit-animation: blink 12s infinite;
+    // animation: blink 12s infinite;
+    // -webkit-animation: blink 12s infinite;
     margin: 0;
 
 
     h1 {
-        font-size: 3rem;
-        line-height: 1.75rem;
-        margin-top: 8rem;
-        margin-left: 2.5rem;
+      font-size: 3rem;
+      line-height: 1.75rem;
     }
 
     h2 {
@@ -39,9 +38,9 @@
     }
 
     svg{
-        left: 28rem;
-        bottom: 2rem;
-        position: relative;
+        bottom: 10px;
+        right: 10px;
+        position: absolute;
         text-decoration: none;
 
     }
@@ -89,7 +88,6 @@
     54%,
     56%,
     100% {
-
         text-shadow: 0 0 5px #9400d3 , 0 0 15px #9400d3 , 0 0 20px #9400d3 , 0 0 40px #9400d3 , 0 0 60px #9400d3 , 0 0 10px #ff00d9, 0 0 98px #ff00d9;
         color: #fff6a9;
     }

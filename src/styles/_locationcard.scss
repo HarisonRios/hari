@@ -1,17 +1,16 @@
-.content-2 {
+.location-card {
     height: 250px;
-    width: 450px;
+    // width: 450px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../public/maps.png');
-    background-size: 450px;
+    background-size: 100%;
     background-repeat: no-repeat;
 
 
     h1{
-        margin: 15px;
-        left: 80px;
-        position: relative;
-        font-size: 1.5rem;        
-        color: #ffffff;
-        text-shadow: 0 0 5px #131e30, 0 0 15px #131e30, 0 0 20px #131e30, 0 0 40px #131e30, 0 0 60px #031738, 0 0 10px #afc4e5, 0 0 98px #83878d;
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 1.5rem;        
+      color: #ffffff;
+      text-shadow: 0 0 5px #131e30, 0 0 15px #131e30, 0 0 20px #131e30, 0 0 40px #131e30, 0 0 60px #031738, 0 0 10px #afc4e5, 0 0 98px #83878d;
     }
 }
