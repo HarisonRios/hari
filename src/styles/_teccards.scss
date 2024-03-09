@@ -2,10 +2,15 @@
     height: 237px;
     display: grid;
     place-content: center;
-    // padding: 1rem; 
-    color: #c6e2ff;
+    background-color: #330e4928;
+
 
     svg{
         margin: 12px;
+        fill: #c6e2ff;
+        z-index: 999;
     }
+    svg:hover{
+        fill: #a200ff7c;
+      }
 }

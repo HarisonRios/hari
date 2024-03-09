@@ -29,7 +29,7 @@ body {
 .container {
   margin-inline: auto;
   max-width: 800px;
-  // animation: fade-in 2s;
+  animation: fade-in 2s;
   
   display: grid;
   grid-template-columns: 1fr;
@@ -101,47 +101,33 @@ body {
     font-size: 18px;
 }
 
-@keyframes fade-down {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px) scale(0.9);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
+::-webkit-scrollbar-track
+{
+	border: 1px solid #131e30;
+	background-color: #131e30;
 }
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #9400d3;
+}
+
+
 
 @keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(30px) scale(0.9);
-    }
+  0% {
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
-}
-
-// ::-webkit-scrollbar {
-//     width: 12px;
-// }
-  
-// ::-webkit-scrollbar-track {
-//     background:  #e0e0e0;
-//     border-radius: 1px;
-// }
-  
-// ::-webkit-scrollbar-thumb {
-//     background: #131e30;
-//     border-radius: 1px;
-// }
-
-@supports not selector(::-webkit-scrollbar) {
-  body {
-    scrollbar-color: #131e30
-                      #e0e0e0
+  100% {
+      opacity: 1;
+      transform: translateY(0px) scale(1);
   }
 }

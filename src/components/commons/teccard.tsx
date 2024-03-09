@@ -1,4 +1,6 @@
 import "../../styles/_teccards.scss";
+
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -21,8 +23,10 @@ import {
  } 
   from "react-icons/si";
 
+
 function TecCard() {
   return (
+    
     <div className="item tec-card">
       <div className="tecnolgy">
         <FaHtml5 size={25}/>
@@ -42,6 +46,7 @@ function TecCard() {
         <SiVisualstudiocode size={25} />
       </div>
 		</div>
+  
   )
 }
 

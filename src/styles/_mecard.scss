@@ -1,22 +1,27 @@
 .me-card {
-  padding: 15px;
+  padding: 50px;
   margin-top: 35px;
 
   h2{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 1.3rem;
     white-space: nowrap;
     text-shadow: 0 0 5px #9400d3 , 0 0 15px #9400d3 , 0 0 20px #9400d3 , 0 0 40px #9400d3 , 0 0 60px #9400d3 , 0 0 10px #ff00d9 , 0 0 98px #ff00d9;
     color: #ffffff;
-    // animation: blink 12s infinite;
-    // -webkit-animation: blink 12s infinite;
   }
   
   p{
     color: #c6e2ff;
     font-size: 1rem;
     text-shadow: 0 0 5px #131e30, 0 0 15px #131e30, 0 0 20px #131e30, 0 0 40px #131e30, 0 0 60px #031738, 0 0 10px #afc4e5, 0 0 98px #83878d;
+  }
+
+  img{
+    position: relative;
+    top: 7px;
+    height: 30px;
+    width: 30px;
   }
 }
 
