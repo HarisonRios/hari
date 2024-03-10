@@ -1,9 +1,11 @@
-import "../../styles/_timecard.scss";
 import moment from 'moment';
+import "../../styles/_timecard.scss";
+
 
 function ImagemComBaseNoHorario() {
   const horaAtual = Number(moment().format('H'));
   let imagem;
+  console.log(horaAtual);
 
   if (horaAtual >= 6 && horaAtual < 12) { // Manhã
     imagem = <img src="../../public/time/morning.png" alt="Manhã" />;
@@ -27,24 +29,7 @@ function ImagemComBaseNoHorario() {
     </div>
   );
   }
-  
+
+
+
 export default ImagemComBaseNoHorario;
-  
-function clock() {
-  const time = new Date()
-  const hours = time.getHours()
-  const minutes = time.getMinutes()
-  const seconds = time.getSeconds()
-
-  document.querySelectorAll('.clock')[0].innerHTML = 
-    harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
-
-  function harold(standIn: string | number): any {
-    if (Number(standIn) < 10) {
-      standIn = '0' + standIn
-    }
-    return standIn;
-  }
-}
-
-setInterval(clock, 1000);

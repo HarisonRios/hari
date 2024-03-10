@@ -1,11 +1,13 @@
-
-import "./styles/_main.scss";
+import "./styles/_project.scss";
 
 function Projects() {
-  return (
+  return ( 
     <div className="project"> 
-      <h1> Em construção... 🚧</h1>
+
+    <h1> Em construção 🚧 </h1>
+
     </div>
+
   )
 }
 

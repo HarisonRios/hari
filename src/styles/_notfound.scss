@@ -1,0 +1,57 @@
+#notfound {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.100), rgba(0, 0, 0, 0.900)), url('../../public/backgrounds/bg3.jpg'
+    );
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+height: 45.6rem;
+
+font-family: "Poppins", sans-serif;
+padding: 60px;
+
+
+
+}
+
+
+.notfound {
+animation: fade-in 2s;
+display: grid;
+place-items: center;
+top: 250px;
+position: relative;
+text-shadow: 0 0 1px #9400d3, 0 0 2px #9400d3, 0 0 3px #9400d3, 0 0 4px #9400d3;
+
+    h1 {
+       color: #c6e2ff;
+    }
+    a{
+        color: #c6e2ff;
+    }
+    a:hover{
+        color: #a200ff46;
+        cursor: pointer;
+      
+      }
+    }
+
+
+    @media (max-width: 600px) {
+        .notfound{
+            align-items: center;
+        }
+      }
+
+
+@keyframes fade-in {
+0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+}
+
+100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+}
+}

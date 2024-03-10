@@ -15,7 +15,6 @@
 
 
 .introduction {
-    text-shadow: 0 0 5px #9400d3 , 0 0 15px #9400d3 , 0 0 20px #9400d3 , 0 0 40px #9400d3 , 0 0 60px #9400d3 , 0 0 10px #ff00d9 , 0 0 98px #ff00d9;
     color: #ffffff;
     margin: 30px;
 
@@ -23,11 +22,13 @@
     h1 {
       font-size: 3rem;
       line-height: 1.75rem;
+      text-shadow: 0 0 1px #9400d3, 0 0 2px #9400d3, 0 0 3px #9400d3, 0 0 4px #9400d3;
     }
 
     h2 {
         margin-top: 5px;
         font-size: 1rem;
+        text-shadow: 0 0 1px #9400d3, 0 0 2px #9400d3, 0 0 3px #9400d3, 0 0 4px #9400d3;
     }
 
     a{
@@ -39,7 +40,7 @@
         right: 10px;
         position: absolute;
         margin: 15px;
-        fill: #ffffff;
+        fill: #dbbdece4;
     }
 }
 

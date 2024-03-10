@@ -12,7 +12,7 @@
 
 body {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.100), rgba(0, 0, 0, 0.900)), url('bg.jpg'
+    rgba(0, 0, 0, 0.100), rgba(0, 0, 0, 0.900)), url('../../public/backgrounds/bg.jpg'
   );
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,23 +101,6 @@ body {
     font-size: 18px;
 }
 
-::-webkit-scrollbar-track
-{
-	border: 1px solid #131e30;
-	background-color: #131e30;
-}
-
-::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar-thumb
-{
-	background-color: #9400d3;
-}
-
 
 
 @keyframes fade-in {
@@ -131,3 +114,5 @@ body {
       transform: translateY(0px) scale(1);
   }
 }
+
+

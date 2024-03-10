@@ -3,7 +3,6 @@
     background-image: url('../../public/github.gif');
     background-size: 100%;
     background-repeat: no-repeat;
-    text-shadow: 0 0 5px #131e30, 0 0 15px #131e30, 0 0 20px #131e30, 0 0 40px #131e30, 0 0 60px #031738, 0 0 10px #afc4e5, 0 0 98px #83878d;
 
 
     transition: all 600ms cubic-bezier(0.1, 0, 0.1, 1);
@@ -42,5 +41,7 @@
         position: relative;
         top: 95px;
         font-size: 1.2rem; 
+        color: #ffffff;
+        text-shadow: 0 0 1px #9400d3, 0 0 2px #9400d3, 0 0 3px #9400d3, 0 0 4px #9400d3;
     }
 }
