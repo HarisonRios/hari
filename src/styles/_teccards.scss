@@ -3,10 +3,9 @@
     display: grid;
     place-content: center;
     background-color: #330e4928;
-
-
+    
     svg{
-        margin: 12px;
+        margin: 11px;
         fill: #c6e2ff;
         z-index: 999;
     }
@@ -14,4 +13,11 @@
         fill: #a200ff46;
         cursor: pointer;
       }
+}
+
+
+@media (max-width: 736px) {
+    .tec-card svg{
+        margin: 5px;
+    }
 }

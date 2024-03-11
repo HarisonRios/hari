@@ -16,3 +16,21 @@ export function clock() {
     }
   }
   
+   interface SpotifyData {
+    album_art_url: string | undefined;
+    artist: string | null;
+    song: string | null;
+    album: string | null;
+  }
+
+  export interface SpotifyCardProps {
+    spotifyData: SpotifyData;
+  }
+
+  interface LocationData {
+    location: string | undefined;
+  }
+
+  export interface LocationCardProps {
+    LocationData: LocationData;
+  }

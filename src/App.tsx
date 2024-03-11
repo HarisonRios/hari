@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ContactmeCard from "./components/commons/contactmecard";
 import GithubCard from "./components/commons/githubcard";
 import InstaCard from "./components/commons/instacard";
@@ -11,12 +11,32 @@ import TecCard from "./components/commons/teccard";
 import TimeCard from "./components/commons/timecard";
 import { clock } from "./components/partials/constant";
 import "./styles/_main.scss";
+import axios from "axios";
 
 function App() {
+  const [data, setData] = useState([]);
+
   useEffect(() => {
     const interval = setInterval(clock, 1000);
     return () => clearInterval(interval);
   }, []);
+
+    useEffect(() => {
+      getData();
+    }, [])
+  
+    async function getData(){
+      const url = "https://api.lanyard.rest/v1/users/398875341554188290"
+      try {
+        const response = await axios.get(url)
+        setData(response.data.data)
+      } catch (e) { console.error(e) }
+    }
+
+    useEffect(() => {
+      console.log(data)
+    }, [data])
+    
 
   return (
       <div className="container">
@@ -26,7 +46,7 @@ function App() {
         <TimeCard/> 
         <GithubCard/>
         <ProjectCard/>
-        <SpotifyCard/>
+        <SpotifyCard spotifyData={data.spotify} />
         <TecCard/>
         <MeCard/>
         <ContactmeCard/>
