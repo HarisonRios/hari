@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ContactmeCard from "./components/commons/contactmecard";
 import GithubCard from "./components/commons/githubcard";
-import InstaCard from "./components/commons/instacard";
+import DiscordCard from "./components/commons/discordcard";
 import IntroCard from "./components/commons/introcard";
 import LocationCard from "./components/commons/locationcard";
 import MeCard from "./components/commons/mecard";
@@ -41,7 +41,7 @@ function App() {
   return (
       <div className="container">
         <IntroCard/>
-        <InstaCard/>
+        <DiscordCard discordData={data.discord} />
         <LocationCard/>
         <TimeCard/> 
         <GithubCard/>
@@ -55,3 +55,6 @@ function App() {
   )
 }
 export default App
+
+
+

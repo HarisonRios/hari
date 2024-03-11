@@ -16,6 +16,7 @@ export function clock() {
     }
   }
   
+
    interface SpotifyData {
     album_art_url: string | undefined;
     artist: string | null;
@@ -26,6 +27,21 @@ export function clock() {
   export interface SpotifyCardProps {
     spotifyData: SpotifyData;
   }
+  
+  
+  interface DiscordData {
+    avatar: string | undefined;
+    id: string | null;
+    username: string | null;
+    discord_status: string | null;
+  }
+
+  export interface DiscordCardProps {
+    discordData: DiscordData;
+  }
+
+
+
 
   interface LocationData {
     location: string | undefined;
