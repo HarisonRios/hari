@@ -8,7 +8,7 @@
 
 <img src="public/previewMobile.png" alt="Exemplo imagem">
 
-> Imagem Hari - Portifolio para Dispositivos Mobile
+> Imagem Hari - Portifolio para Dispositivos Mobile e Tablets
 
 
 ## Ajustes e melhorias
