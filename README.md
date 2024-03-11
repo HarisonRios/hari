@@ -1,9 +1,16 @@
 
 # Portfólio - Harison Rios 💻
 
-<img src="" alt="Exemplo imagem">
+<img src="public/preview.png" alt="Exemplo imagem">
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+> Imagem Hari - Portifolio para Web
+
+
+<img src="public/previewMobile.png" alt="Exemplo imagem">
+
+> Imagem Hari - Portifolio para Web
+
+
 
 
 ### Ajustes e melhorias
