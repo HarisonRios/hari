@@ -1,6 +1,6 @@
 .github-card {
     height: 200px;
-    background-image: url('../../public/github.gif');
+    background-image: url('../../public/home/github.gif');
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -10,7 +10,7 @@
 }
 
 .github-card:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../public/github.gif');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../public/home/github.gif');
         background-size: 100%;
     background-repeat: no-repeat;
     box-shadow: 0 0 20px, rgba(0, 0, 0, 0.5);
@@ -25,7 +25,7 @@
         top: 12px;
         height: 30px;
         width: 30px;
-        color: #ffffff;
+        fill: #c6e2ff;
     }
     
 

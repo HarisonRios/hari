@@ -1,27 +1,26 @@
-import "../../styles/_spotiftcard.scss";
 import { FaSpotify } from "react-icons/fa";
+import "../../styles/_spotiftcard.scss";
 import { SpotifyCardProps } from "../partials/constant";
-import { ReactElement } from "react";
 
 
 
 
-function SpotifyCard({ spotifyData }: SpotifyCardProps): ReactElement {
+function SpotifyCard({ spotifyData }: SpotifyCardProps) {
   return (
 
     <div className="spotify-card">
         <FaSpotify id="spotify" />  
-        <p>Escultando agora...</p>
         {spotifyData &&  (
             <>
             <div className="listen"> 
-            <img alt="Album Spotify" src={spotifyData.album_art_url}/> 
-         
-            <h1> {spotifyData.song} </h1>
-            <h2> {spotifyData.artist} </h2>
-            <h3> {spotifyData.album} </h3>
-            
+          
+            <p>Escultando agora...</p>
+            <img alt="Album Spotify" src={spotifyData.album_art_url}/>
+            <h1 id="listentext"> {spotifyData.song} </h1>
+            <h2 id="listentext"> {spotifyData.artist} </h2>
+            <h3 id="listentext"> {spotifyData.album} </h3>
             </div>
+       
             </>
           )
         }

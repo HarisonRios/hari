@@ -1,12 +1,12 @@
 
 # Portfólio - Harison Rios 💻
 
-<img src="public/preview.png" alt="Exemplo imagem">
+<img src="public/preview/preview.png" alt="Exemplo imagem">
 
 > Imagem Hari - Portifolio para Web
 
 
-<img src="public/previewMobile.png" alt="Exemplo imagem">
+<img src="public/preview/previewMobile.png" alt="Exemplo imagem">
 
 > Imagem Hari - Portifolio para Dispositivos Mobile e Tablets
 
@@ -18,7 +18,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Aba Projetos
 - [ ] Spotify API
 - [ ] Location API
-- [ ] Location API
+- [ ] Discord API
 - [ ] Melhorias no sistema de envio de email
 
 

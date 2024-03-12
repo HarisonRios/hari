@@ -5,7 +5,7 @@ function ProjectCard() {
   return (
     <Link to="../../Projects.tsx">
       <div className="item project-card"> 
-        <img src="../public/enderchest.webp"/>
+        <img src="../public/home/enderchest.webp"/>
         <h2>Projetos</h2>
       </div>
     </Link>

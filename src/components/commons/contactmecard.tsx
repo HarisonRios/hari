@@ -9,6 +9,8 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import { discord_url, email_url, github_url, instagram_url, linkedin_url } from "../partials/constant";
+
 
 function ContactmeCard() {
   const [name, setName] = useState('')
@@ -88,11 +90,11 @@ function sendEmail(e: { preventDefault: () => void; }) {
       </form>
 
       <div className="contact-card__icons">
-        <a href="mailto:email@provedor.com.br" target="_blank"> <MdOutlineMailOutline size={45}/> </a>
-        <a href="https://github.com/HarisonRios" target="_blank"> <FaGithub size={45}/> </a>
-        <a href="https://www.linkedin.com/in/harison-rios-046731235/" target="_blank"> <FaLinkedin size={45}/> </a> 
-        <a href="https://www.instagram.com/harison_rioos/" target="_blank"> <FaInstagram size={45} /> </a>
-        <a href="https://discord.com/users/hariisu_" target="_blank"> <FaDiscord size={45}/> </a> 
+        <a href={email_url} target="_blank"> <MdOutlineMailOutline size={45}/> </a>
+        <a href={github_url} target="_blank"> <FaGithub size={45}/> </a>
+        <a href={linkedin_url} target="_blank"> <FaLinkedin size={45}/> </a> 
+        <a href={instagram_url} target="_blank"> <FaInstagram size={45} /> </a>
+        <a href={discord_url} target="_blank"> <FaDiscord size={45}/> </a> 
       </div> 
     </div>
   );

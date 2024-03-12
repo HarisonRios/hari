@@ -1,3 +1,11 @@
+export const github_url = "https://github.com/HarisonRios";
+export const discord_url = "https://discord.com/users/hariisu_";
+export const spotify_url = "https://open.spotify.com/playlist/6fiyHiNYi1gDeaRn9ONCcy";
+export const linkedin_url = "https://www.linkedin.com/in/harison-rios-046731235/";
+export const instagram_url = "https://www.instagram.com/harison_rioos/";
+export const email_url = "mailto:email@provedor.com.br";
+
+
 export function clock() { 
     const time = new Date()
     const hours = time.getHours()
@@ -15,9 +23,9 @@ export function clock() {
       return standIn;
     }
   }
-  
 
-   interface SpotifyData {
+
+   export interface SpotifyData {
     album_art_url: string | undefined;
     artist: string | null;
     song: string | null;
@@ -25,28 +33,32 @@ export function clock() {
   }
 
   export interface SpotifyCardProps {
-    spotifyData: SpotifyData;
+    spotifyData: SpotifyData | undefined;
   }
-  
-  
-  interface DiscordData {
+ 
+
+  export interface DiscordData {
     avatar: string | undefined;
-    id: string | null;
-    username: string | null;
-    discord_status: string | null;
+    global_name: string | null;
+    active_on_discord_desktop: boolean;
+    active_on_discord_mobile: boolean; 
   }
 
   export interface DiscordCardProps {
-    discordData: DiscordData;
+    discord_user: DiscordData | undefined;
+  }
+
+
+
+  export interface kv {
+    location : string | null | undefined;
+  }
+
+  export interface LocationType {
+    location: kv;
   }
 
 
 
 
-  interface LocationData {
-    location: string | undefined;
-  }
 
-  export interface LocationCardProps {
-    LocationData: LocationData;
-  }
