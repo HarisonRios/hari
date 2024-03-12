@@ -106,6 +106,25 @@ body {
 
 
 
+
+::-webkit-scrollbar {
+  width: 12px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: #131e30;;
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9400d3;
+  border-radius: 4px;
+}
+
+
+
+
 @keyframes fade-in {
   0% {
       opacity: 0;
