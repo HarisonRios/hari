@@ -26,7 +26,7 @@ function Discordcard({discord_user}: DiscordCardProps) {
 };
 
 const DiscordStatus = ({ online }: {online: boolean}) => {
-  return <div id="status" style={{ backgroundColor: online ? "red": "green", width: "20px", height: "20px", borderRadius: "360px"}}/>
+  return <div id="status" style={{ backgroundColor: online ? "red": "green", width: "20px", height: "20px", borderRadius: "360px" }}/>
 }
 
 export default Discordcard
