@@ -3,7 +3,7 @@ import "../../styles/_mecard.scss";
 function MeCard() {
   return (
     <div className="item me-card">
-      <h2> Hello&nbsp;World&nbsp; <img src="../../public/home/book.gif" alt="Book"/>  </h2>
+      <h2> Hello&nbsp;World&nbsp; <img src="https://wiki.hypixel.net/images/0/0a/SkyBlock_items_enchanted_book_and_quill.gif" alt="Book"/>  </h2>
         <p>
           Oi, meu nome é Harison, sou técnico em Desenvolvimento de Sistemas na ETEC
           e estou fazendo o faculdade de tecnólogo em Análise e
