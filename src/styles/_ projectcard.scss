@@ -11,12 +11,16 @@
   place-items: center;
 
   img {
-    width: 140px;
+    position: relative;
+    bottom: 20px;
+    width: 180px;
     transition-property: all;
     transition: all 600ms cubic-bezier(0.1, 0, 0.1, 1);
   }
     
   h2{
+    position: relative;
+    bottom: 20px;
     font-size: 1.2rem;
     color: #ffffff;
     text-shadow: 0 0 1px #9400d3, 0 0 2px #9400d3, 0 0 3px #9400d3, 0 0 4px #9400d3;
