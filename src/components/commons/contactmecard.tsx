@@ -11,7 +11,6 @@ import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { discord_url, email_url, github_url, instagram_url, linkedin_url } from "../partials/constant";
 
-
 function ContactmeCard() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
