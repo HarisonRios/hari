@@ -28,7 +28,7 @@ function App() {
     useEffect(() => {
       getData();
     }, [])
-  
+   
     async function getData(){
       const url = "https://api.lanyard.rest/v1/users/398875341554188290"
       try {

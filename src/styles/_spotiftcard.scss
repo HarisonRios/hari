@@ -74,6 +74,24 @@
 }
 
 
+.spotifyclosed{
+  text-align: center;
+  align-items: center;
+  top: 10px;
+  position: relative;
+  p{
+    font-size: 2rem;
+    text-shadow: 0 0 1px #9400d3, 0 0 2px #9400d3, 0 0 3px #9400d3, 0 0 4px #9400d3;
+  }
+  svg{
+    height: 45px;
+    width: 45px;
+    fill: #9400d3;
+  }
+}
+
+
+
 @media (max-width: 599px) {
   #listentext{
     font-size: 1rem;
@@ -81,10 +99,9 @@
 }
 
 
-
-
-
 .spotify-card:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+
