@@ -16,9 +16,7 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [ ] Aba Projetos
-- [ ] Spotify API
-- [ ] Location API
-- [ ] Discord API
+- [ ] Lanyard API
 - [ ] Melhorias no sistema de envio de email
 
 
