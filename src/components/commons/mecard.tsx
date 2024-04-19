@@ -5,9 +5,9 @@ function MeCard() {
     <div className="item me-card">
       <h2> Hello&nbsp;World&nbsp; <img src="https://i.pinimg.com/originals/fe/f8/65/fef865f1df5fa7bfefafaa56f4d7aaec.gif" alt="Book"/>  </h2>
         <p>
-          Oi, meu nome é Harison, sou técnico em Desenvolvimento de Sistemas na ETEC Itaquera
+          Oi, meu nome é Harison, sou técnico em Desenvolvimento de Sistemas pela ETEC Itaquera
           e estou cursando tecnólogo em Análise e
-          Desenvolvimento de Sistemas na Impacta.
+          Desenvolvimento de Sistemas na Faculdade Impacta de Tecnologia.
         </p>          
         <br />
         <p>

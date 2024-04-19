@@ -31,7 +31,7 @@
   place-items: start;
 
   p {
-    color: #c6e2ff;
+    color: #ffffff;
     font-size: 1rem;
     font-weight: bold;
     margin-left: 60px;
@@ -42,9 +42,9 @@
 
 
   img {
-    border: #fb0035 1px solid;
-    border-radius: 20px;
-    margin-left: 40px;
+    border: #fb0035 2px solid;
+    border-radius: 5px;
+    margin-left: 30px;
     object-fit: cover;
     height: 150px;
     width: 150px;
@@ -54,9 +54,9 @@
 
 
   #listentext  {
-    margin-left: 220px;
+    margin-left: 200px;
     position: relative;
-    bottom: 130px;
+    bottom: 120px;
     word-break: break-word;
   }
   
@@ -65,8 +65,8 @@
   }
 
   h2 {
-    font-size: 1.3rem;
-    color: #c6e2ff;
+    font-size: 1rem;
+    color: #fb0035;
   }
 
   h3 {
