@@ -5,7 +5,7 @@ function ProjectCard() {
   return (
     <Link to="../../Projects.tsx">
       <div className="item project-card"> 
-        <img src="https://wiki.hypixel.net/images/a/ae/SkyBlock_renders_shiny_endstone.gif" alt="Obsidian Effect"/>
+        <img src="https://i.pinimg.com/originals/ca/59/c7/ca59c7300ea299fc9f429da8e7924e5c.gif" alt="Obsidian Effect"/>
         <h2>Projetos</h2>
       </div>
     </Link>

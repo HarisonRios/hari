@@ -1,6 +1,8 @@
 .me-card {
   padding: 35px;
   margin-top: 35px;
+  background: linear-gradient(160deg, #090909ab 0%, #0000009c 127%);
+
   
   h2{
     margin-bottom: 40px;
@@ -8,13 +10,13 @@
     font-size: 1.5rem;
     white-space: nowrap;
     color: #ffffff;
-    text-shadow: 0 0 1px #9400d3, 0 0 2px #9400d3, 0 0 3px #9400d3, 0 0 4px #9400d3;
+    text-shadow: 0 0 1px #fb0035, 0 0 2px #fb0035, 0 0 3px #fb0035, 0 0 4px #fb0035;
     font-weight: bold;
   }
   
   p{
-    color: #c6e2ff;
-    font-size: 1rem;
+    text-shadow: 0 0 1px #fb0035;
+    font-size: 1.05rem;
   }
 
   img{
