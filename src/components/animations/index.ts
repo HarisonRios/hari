@@ -1,8 +1,8 @@
 import gsap from "gsap";
+
 const tl = gsap.timeline();
 
-
-export const preLoaderAnim = () => {
+export const preLoaderAnim = (): void => {
   tl.to("body", {
     duration: 0.1,
     css: { overflowY: "hidden" },
@@ -32,7 +32,6 @@ export const preLoaderAnim = () => {
       stagger: 0.2,
       ease: "Power3.easeOut",
     })
-
     .to(".landing", {
       duration: 0.05,
       css: { overflowY: "hidden", height: "unset" },
@@ -54,13 +53,12 @@ export const preLoaderAnim = () => {
         duration: 1.5,
         height: "0vh",
         ease: "Power3.easeOut",
-        onComplete: mobileLanding(),
+        onComplete: mobileLanding, // Aqui deve ser passado como referência
       },
       "-=2"
     )
     .from(".landing__main .text", {
       duration: 2,
-      // scale: 0,
       y: 10,
       opacity: 0,
       stagger: {
@@ -72,18 +70,17 @@ export const preLoaderAnim = () => {
       duration: 0.5,
       opacity: 0,
       delay: window.innerWidth < 763 ? -3 : -0.6,
-      // y: 80,
       stagger: {
         amount: 0.5,
       },
       ease: "expo.easeOut",
-      onComplete: animateMainShape(),
+      onComplete: animateMainShape, // Aqui deve ser passado como referência
     })
     .from(".main-circle", {
       duration: 1,
       opacity: 0,
       ease: "power3.easeInOut",
-      onComplete: animateShapes(),
+      onComplete: animateShapes, // Aqui deve ser passado como referência
     })
     .from(".shapes .shape", {
       duration: 1,
@@ -98,7 +95,7 @@ export const preLoaderAnim = () => {
     });
 };
 
-export const openMenu = () => {
+export const openMenu = (): void => {
   const tl = gsap.timeline();
   tl.to("body", {
     duration: 0.1,
@@ -144,15 +141,9 @@ export const openMenu = () => {
       },
       "-=.3"
     );
-
-  // change cursor color when nav is open
-  // tl.to(".cursor", {
-  //   delay: -1,
-  //   css: { className: "+=cursor-active" },
-  // }).to(".cursor2", { delay: -1, css: { className: "+=cursor2-active" } });
 };
 
-export const closeMenu = () => {
+export const closeMenu = (): void => {
   const tl = gsap.timeline();
   tl.to("body", {
     duration: 0.05,
@@ -181,14 +172,9 @@ export const closeMenu = () => {
       duration: 0.05,
       css: { display: "none" },
     });
-
-  // tl.to(".cursor-active", {
-  //   css: { className: "+=cursor" },
-  // }).to(".cursor2-active", { css: { className: "+=cursor2" } });
 };
 
-// recurrent animations
-export const fadeUp = (el, delay = 0) => {
+export const fadeUp = (el: any, delay: number = 0): void => {
   tl.from(el, {
     y: 150,
     duration: 1,
@@ -198,8 +184,8 @@ export const fadeUp = (el, delay = 0) => {
   });
 };
 
-export const mobileLanding = () => {
-  window.innerWidth < 763 &&
+export const mobileLanding = (): void => {
+  if (window.innerWidth < 763) {
     tl.from(".landing__main2", {
       duration: 1,
       delay: 0,
@@ -207,9 +193,10 @@ export const mobileLanding = () => {
       y: 80,
       ease: "expo.easeOut",
     });
+  }
 };
 
-const animateShapes = () => {
+const animateShapes = (): void => {
   const infiniteTl = gsap.timeline({
     repeat: -1,
   });
@@ -248,7 +235,7 @@ const animateShapes = () => {
     });
 };
 
-const animateMainShape = () => {
+const animateMainShape = (): void => {
   const infiniteTl = gsap.timeline({
     repeat: -1,
   });
@@ -273,32 +260,32 @@ const animateMainShape = () => {
     });
 };
 
-export const boxHover = (e) => {
+export const boxHover = (e: Event): void => {
   const tl = gsap.timeline();
-  window.innerWidth >= 986 &&
-    tl
-      .to(e.target.querySelector(".link"), {
-        duration: 0,
-        opacity: 1,
-      })
-      .from(e.target.querySelectorAll(".box-anim"), {
-        duration: 0.3,
-        opacity: 0,
-        y: 30,
-        stagger: 0.1,
-        ease: "Power3.easeOut",
-      });
+  if (window.innerWidth >= 986) {
+    tl.to((e.target as HTMLElement).querySelector(".link"), {
+      duration: 0,
+      opacity: 1,
+    }).from((e.target as HTMLElement).querySelectorAll(".box-anim"), {
+      duration: 0.3,
+      opacity: 0,
+      y: 30,
+      stagger: 0.1,
+      ease: "Power3.easeOut",
+    });
+  }
 };
 
-export const boxExit = (e) => {
-  window.innerWidth >= 986 &&
-    gsap.to(e.target.querySelector(".link"), {
+export const boxExit = (e: Event): void => {
+  if (window.innerWidth >= 986) {
+    gsap.to((e.target as HTMLElement).querySelector(".link"), {
       duration: 0,
       opacity: 0,
     });
+  }
 };
 
-export const fadeIn = (el) => {
+export const fadeIn = (el: HTMLElement): void => {
   gsap.to(el, {
     duration: 2,
     opacity: 1,
@@ -307,7 +294,7 @@ export const fadeIn = (el) => {
   });
 };
 
-export const fadeOut = (el) => {
+export const fadeOut = (el: HTMLElement): void => {
   gsap.to(el, {
     duration: 1,
     opacity: 0,
