@@ -10,14 +10,21 @@
 
 > Imagem Hari - Portifolio para Dispositivos Mobile e Tablets
 
+<img src=".github/previewVersion.png" alt="Exemplo imagem">
+
+> Imagem Hari - Versões anteriores do Projeto
+
+
 
 ## Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] Aba Projetos
-- [ ] Lanyard API
-- [ ] Melhorias no sistema de envio de email
+- [ ] Aba Projetos.
+- [ ] Melhorias no sistema de envio de email.
+- [ ] Melhorias no reloader (Mostar apenas reloder caso seja a primeira vez q o user entrar no portifolio.)
+- [ ] Melhorias no card do spotify (responsividade)
+
 
 
 ## Tecnologias
