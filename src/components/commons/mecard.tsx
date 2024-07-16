@@ -3,22 +3,22 @@ import "../../styles/_mecard.scss";
 function MeCard() {
   return (
     <div className="item me-card">
-      <h2> Hello&nbsp;World&nbsp; <img src="https://i.pinimg.com/originals/fe/f8/65/fef865f1df5fa7bfefafaa56f4d7aaec.gif" alt="Book"/>  </h2>
-        <p>
-          Oi, meu nome é Harison, sou técnico em Desenvolvimento de Sistemas pela ETEC Itaquera
-          e estou cursando tecnólogo em Análise e
-          Desenvolvimento de Sistemas na Faculdade Impacta de Tecnologia.
+      <h2> Hello&nbsp;World&nbsp; <img src="https://minecraft.wiki/images/Invicon_Enchanted_Book.gif?85252" alt="Book"/>  </h2>
+      <p>
+          Opa, eu sou Harison, tenho 18 anos e sou formado em Desenvolvimento de Sistemas pela ETEC de Itaquera. Atualmente estou cursando Análise e Desenvolvimento de Sistemas na São Paulo Tech School - SPTech.
         </p>          
         <br />
         <p>
           Estou envolvido com a programação desde criança, fazendo pequenos script e aplicações para jogos, e atualmente estou
-          estudando e desenvolvendo projetos acadêmicos.
+          estudando React, NextJS, NodeJS, API's Rest e desenvolvendo projetos acadêmicos.
         </p>    
         <br />
         <p>
-          Além da programação, gosto muito de futebol, sou são paulino, adoro escultar música, principalmente rap, trap e músicas
-          internacionais.
-        </p>
+          Além da programação, gosto muito de futebol, sou são paulino, adoro escultar música de diversos gêneros principalmente rap, trap, rock, e musicas internacionais, se tiver qualquer duvida, ou
+           interesse em entrar em contato, mande um e-mail abaixo.</p>
+
+
+        
     </div>
   )
 }

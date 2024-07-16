@@ -37,14 +37,13 @@
     margin-left: 60px;
     position: relative;
     bottom: 12px;
-
   }
 
-
+  
   img {
-    border: #fb0035 2px solid;
-    border-radius: 5px;
-    margin-left: 30px;
+    border:#7d06c4 2px solid;
+    border-radius: 10px;
+    margin: 5px 30px;
     object-fit: cover;
     height: 150px;
     width: 150px;
@@ -56,22 +55,24 @@
   #listentext  {
     margin-left: 200px;
     position: relative;
-    bottom: 120px;
+    bottom: 140px;
     word-break: break-word;
+    font-size: 1.2rem;
   }
   
   h1{
-    text-shadow: 0 0 1px #fb0035, 0 0 2px #fb0035, 0 0 3px #fb0035, 0 0 4px #fb0035;
+    text-shadow: 0 0 1px #7d06c4, 0 0 2px #7d06c4, 0 0 3px #7d06c4, 0 0 4px #7d06c4;
   }
 
   h2 {
-    font-size: 1rem;
-    color: #fb0035;
+    font-size: 0.9rem;
+    color:  #7d06c4; 
   }
 
   h3 {
-    font-size: 1rem;
-    text-shadow: 0 0 1px #fb0035, 0 0 2px #fb0035, 0 0 3px #fb0035, 0 0 4px #fb0035;
+    margin: 1;
+    font-size: 0.8rem;
+    text-shadow: 0 0 1px #7d06c4, 0 0 2px #7d06c4, 0 0 3px #7d06c4, 0 0 4px #7d06c4;
   }
 }
 
@@ -83,12 +84,16 @@
   position: relative;
   p{
     font-size: 2rem;
-    text-shadow: 0 0 1px #fb0035, 0 0 2px #fb0035, 0 0 3px #fb0035, 0 0 4px #fb0035;
+    text-shadow: 0 0 1px #7d06c4, 0 0 2px #7d06c4, 0 0 3px #7d06c4, 0 0 4px #7d06c4;
+  }
+  h2{
+    font-size: 1rem;
+    text-shadow: 0 0 1px #7d06c4, 0 0 2px #7d06c4, 0 0 3px #7d06c4, 0 0 4px #7d06c4;
   }
   svg{
     height: 45px;
     width: 45px;
-    fill: #fb0035;
+    fill: #7d06c4;
   }
 }
 

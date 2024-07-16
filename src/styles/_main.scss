@@ -1,17 +1,5 @@
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
-
-
-
-// $vermelho: #fb0035;
-// $preto: #1b1919;
-// $sakura: #9038dd;
-// text-shadow: 0 0 1px #fb0035, 0 0 2px #fb0035, 0 0 3px #fb0035, 0 0 4px #fb0035;
-
-
-
-
+// $roxo1: #6f30c7;
 
 
 * {
@@ -33,7 +21,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  // font-family: "Montserrat", sans-serif;
   font-family: "Varela Round", sans-serif;
 
 
@@ -110,7 +97,8 @@ body {
 
 .item {
     background: #000000a4;
-    box-shadow: 0 8px 32px 0 #fb00366b;
+    box-shadow: 0 8px 32px 0 #530daea5;
+    
 
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -135,7 +123,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fb0035;
+  background: #520db2;
   border-radius: 4px;
 }
 

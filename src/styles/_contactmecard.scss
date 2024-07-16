@@ -8,11 +8,11 @@
     place-items: center;
 
   svg{
-    fill: #fb0035;
+    fill: #7d06c4;
     padding: 11px; 
   }
   svg:hover{
-    fill: #fb003622;
+    fill: #1f0542;
   }
 }
 
@@ -30,24 +30,24 @@
     text-align: center;
     margin-bottom: 20px;
     color: #ffffff;
-    text-shadow: 0 0 1px #fb0035, 0 0 2px #fb0035, 0 0 3px #fb0035, 0 0 4px #fb0035;
+    text-shadow: 0 0 1px  #6f30c7, 0 0 2px #6f30c7, 0 0 3px #b038f0, 0 0 4px #b038f0;
   }
 }
 
 .input{
-  background-color: #fb00366d;
+  background-color: #6f30c7;
   margin-bottom: 14px;
   height: 34px;
   border-radius: 5px;
   padding: 0 8px;
   color: rgb(255, 255, 255);
-  box-shadow: 0 8px 32px 0 #fb00366b;
+  box-shadow: 0 8px 32px 0 #6f30c7;
   border: 1px solid rgba(255, 255, 255, 0.18);  
  
 }
 
 .textarea{
-  background-color: #fb00366d;
+  background-color: #6f30c7;
   margin-bottom: 14px;
   border-radius: 5px;
   border: 0;
@@ -55,7 +55,7 @@
   height: 94px;
   resize: none;
   color: rgb(255, 255, 255);
-  box-shadow: 0 8px 32px 0 #fb00366b;
+  box-shadow: 0 8px 32px 0 #6f30c7;
   border: 1px solid rgba(255, 255, 255, 0.18);
 } 
 
@@ -67,12 +67,12 @@
   
   border: 0;
   cursor: pointer;
-  background-color: #fb00366d;
+  background-color: #6f30c7;
   font-size: 20px;
   transition: background-color, transform 0.8s;
 }
 
 .button:hover{
-  background-color: #fb003622;
+  background-color: #1f0542;
   transform: scale(1.01);
 }

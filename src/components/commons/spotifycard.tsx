@@ -19,8 +19,8 @@ function SpotifyCard({ spotifyData }: SpotifyCardProps) {
       ) : (
         <div className="spotifyclosed"> 
         <GiSoundOff />
-        <p>Spotify Closed</p>
-        <p>Nothing Here</p>
+        <p>Spotify Fechado</p>
+        <h2>Nada tocando no momento</h2>
         </div>
       )}
     </div>
