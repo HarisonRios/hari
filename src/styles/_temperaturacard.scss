@@ -1,105 +1,116 @@
-.item.temperaturacard .temperatura-container {
+.temperaturacard {
+    transition: all 0.3s ease-in-out; /* Adiciona uma transição suave para o efeito de hover */
+  }
+  
+  .temperaturacard:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Corrigido o box-shadow */
+    -webkit-transform: scale(1.1);  
+    transform: scale(1.1);
+  }
+  
+  .temperaturacard .temperatura-container {
     display: flex;
     align-items: center;
   }
   
-  .item.temperaturacard .esquerda, 
-  .item.temperaturacard .direita {
+  .temperaturacard .esquerda, 
+  .temperaturacard .direita {
     padding: 2.2rem;
-    text-align: center; // Centralizar conteúdo em telas menores
-  
-    p {
-      position: relative;
-      bottom: 15px;
-      font-size: 15px;
-    }
-  
-    svg {
-      width: 150px;
-      height: 150px;
-      margin-left: 20px;
-    }
-    h1{
-        text-shadow: 0 0 1px #6f30c7, 0 0 2px #6f30c7, 0 0 3px #b038f0, 0 0 4px #b038f0;
-    }
+    text-align: center;
   }
   
-  .item.temperaturacard .divisoria {
+  .temperaturacard .esquerda p {
+    position: relative;
+    bottom: 15px;
+    font-size: 15px;
+  }
+  
+  .temperaturacard .esquerda svg {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+  }
+  
+  .temperaturacard .direita h1 {
+    text-shadow: 0 0 1px #6f30c7, 0 0 2px #6f30c7, 0 0 3px #b038f0, 0 0 4px #b038f0;
+  }
+  
+  .temperaturacard .divisoria {
     height: 100px; 
     width: 1px;
     background-color: white; 
     margin: 0 1rem;
   }
   
-
   @media (max-width: 1024px) {
-    .item.temperaturacard .esquerda, 
-    .item.temperaturacard .direita {
+    .temperaturacard .esquerda, 
+    .temperaturacard .direita {
       padding: 1.5rem;
-  
-      p {
-        font-size: 14px;
-        bottom: 10px;
-      }
-  
-      svg {
-        width: 120px;
-        height: 120px;
-        margin-left: 10px;
-      }
     }
   
-    .item.temperaturacard .divisoria {
+    .temperaturacard .esquerda p {
+      font-size: 14px;
+      bottom: 10px;
+    }
+  
+    .temperaturacard .esquerda svg {
+      width: 120px;
+      height: 120px;
+      margin-left: 10px;
+    }
+  
+    .temperaturacard .divisoria {
       height: 80px;
     }
   }
   
   @media (max-width: 768px) {
-    .item.temperaturacard .esquerda, 
-    .item.temperaturacard .direita {
+    .temperaturacard .esquerda, 
+    .temperaturacard .direita {
       padding: 1rem;
       font-size: 15px;
-  
-      p {
-        font-size: 13px;
-        bottom: 5px;
-      }
-  
-      svg {
-        width: 100px;
-        height: 100px;
-        margin-left: 5px;
-      }
     }
   
-    .item.temperaturacard .divisoria {
+    .temperaturacard .esquerda p {
+      font-size: 13px;
+      bottom: 5px;
+    }
+  
+    .temperaturacard .esquerda svg {
+      width: 100px;
+      height: 100px;
+      margin-left: 5px;
+    }
+  
+    .temperaturacard .divisoria {
       height: 60px;
     }
   }
   
   @media (max-width: 480px) {
-    .item.temperaturacard .temperatura-container {
-      flex-direction: column; // Organizar elementos em coluna em telas muito pequenas
+    .temperaturacard .temperatura-container {
+      flex-direction: column; /* Organizar elementos em coluna em telas muito pequenas */
+      align-items: center; /* Alinhar ao centro */
     }
   
-    .item.temperaturacard .esquerda, 
-    .item.temperaturacard .direita {
+    .temperaturacard .esquerda, 
+    .temperaturacard .direita {
       padding: 0.5rem;
-  
-      p {
-        font-size: 12px;
-        bottom: 0;
-      }
-  
-      svg {
-        width: 80px;
-        height: 80px;
-        margin: 0;
-      }
     }
   
-    .item.temperaturacard .divisoria {
-      display: none; // Esconder a linha divisória em telas muito pequenas
+    .temperaturacard .esquerda p {
+      font-size: 12px;
+      bottom: 0;
+    }
+  
+    .temperaturacard .esquerda svg {
+      width: 80px;
+      height: 80px;
+      margin: 0;
+    }
+  
+    .temperaturacard .divisoria {
+      display: none; /* Esconder a linha divisória em telas muito pequenas */
     }
   }
   
