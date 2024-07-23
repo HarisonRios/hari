@@ -1,6 +1,7 @@
 import "../../styles/_projectcard.scss";
 import {Link } from 'react-router-dom';
 
+
 function ProjectCard() {
   return (
     <Link to="../../Projects.tsx">

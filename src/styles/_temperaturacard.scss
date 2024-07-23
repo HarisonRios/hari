@@ -1,0 +1,105 @@
+.item.temperaturacard .temperatura-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item.temperaturacard .esquerda, 
+  .item.temperaturacard .direita {
+    padding: 2.2rem;
+    text-align: center; // Centralizar conteúdo em telas menores
+  
+    p {
+      position: relative;
+      bottom: 15px;
+      font-size: 15px;
+    }
+  
+    svg {
+      width: 150px;
+      height: 150px;
+      margin-left: 20px;
+    }
+    h1{
+        text-shadow: 0 0 1px #6f30c7, 0 0 2px #6f30c7, 0 0 3px #b038f0, 0 0 4px #b038f0;
+    }
+  }
+  
+  .item.temperaturacard .divisoria {
+    height: 100px; 
+    width: 1px;
+    background-color: white; 
+    margin: 0 1rem;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .item.temperaturacard .esquerda, 
+    .item.temperaturacard .direita {
+      padding: 1.5rem;
+  
+      p {
+        font-size: 14px;
+        bottom: 10px;
+      }
+  
+      svg {
+        width: 120px;
+        height: 120px;
+        margin-left: 10px;
+      }
+    }
+  
+    .item.temperaturacard .divisoria {
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .item.temperaturacard .esquerda, 
+    .item.temperaturacard .direita {
+      padding: 1rem;
+      font-size: 15px;
+  
+      p {
+        font-size: 13px;
+        bottom: 5px;
+      }
+  
+      svg {
+        width: 100px;
+        height: 100px;
+        margin-left: 5px;
+      }
+    }
+  
+    .item.temperaturacard .divisoria {
+      height: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .item.temperaturacard .temperatura-container {
+      flex-direction: column; // Organizar elementos em coluna em telas muito pequenas
+    }
+  
+    .item.temperaturacard .esquerda, 
+    .item.temperaturacard .direita {
+      padding: 0.5rem;
+  
+      p {
+        font-size: 12px;
+        bottom: 0;
+      }
+  
+      svg {
+        width: 80px;
+        height: 80px;
+        margin: 0;
+      }
+    }
+  
+    .item.temperaturacard .divisoria {
+      display: none; // Esconder a linha divisória em telas muito pequenas
+    }
+  }
+  

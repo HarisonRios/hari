@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@madzadev/audio-player": "^2.1.11",
     "@types/gsap": "^3.0.0",
     "axios": "^1.6.7",
@@ -31,6 +33,7 @@
     "tailwind": "^4.0.0"
   },
   "devDependencies": {
+    "@types/node": "^20.14.11",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^6.21.0",

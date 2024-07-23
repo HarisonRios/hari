@@ -51,9 +51,10 @@ body {
       "project-card   github-card    github-card"
       "spotify-card   spotify-card   tec-card"
       "me-card        me-card        me-card"
+      "temperatura-card   temperatura-card   cv-card"
       "contact-card   contact-card   contact-card";
 
-    .intro-card {
+    .intro-card { 
         grid-area: intro-card;
     }
     
@@ -88,22 +89,29 @@ body {
     .me-card {
         grid-area: me-card;
     }
+
+    .temperaturacard {
+      grid-area: temperatura-card;
+   }
+  
+  .cv-card {
+    grid-area: cv-card;
+  }
     
     .contact-card {
         grid-area: contact-card;
     }
+
+
   }
 }
 
 .item {
     background: #000000a4;
     box-shadow: 0 8px 32px 0 #530daea5;
-    
-
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-
+    border: 1px solid rgba(255, 255, 255, 0.185);
     color: #ffffff;
     border-radius: 1rem;
     font-size: 18px;

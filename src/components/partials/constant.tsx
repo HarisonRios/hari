@@ -1,9 +1,9 @@
 export const github_url = "https://github.com/HarisonRios";
 export const discord_url = "https://discord.com/users/hariisu_";
 export const spotify_url = "https://open.spotify.com/playlist/6fiyHiNYi1gDeaRn9ONCcy";
-export const linkedin_url = "https://www.linkedin.com/in/harison-rios-046731235/";
+export const linkedin_url = "https://www.linkedin.com/in/harisonrios/";
 export const instagram_url = "https://www.instagram.com/harison_rioos/";
-export const email_url = "mailto:email@provedor.com.br";
+export const email_url = "mailto:hharison562@gmail.com.br";
 
 
 export function clock() { 

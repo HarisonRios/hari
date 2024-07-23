@@ -1,10 +1,15 @@
-import "../../styles/_contactmecard.scss"; 
+import "../../styles/_cvcard.scss"; 
+import DownloadButton from '../partials/dowloadbutton';
 
-function CvCard() {
-  return ( 
-    <div className="item contact-card"> 
+const CvCard = () => {
+  return (
+    <div className="item cvcard">
+      <div className="itenscv"> 
+      <h2> Download Currículo (PDF) </h2>
+      <DownloadButton/>
+    </div>
     </div>
   );
-}
+};
 
 export default CvCard;

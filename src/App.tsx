@@ -10,9 +10,12 @@ import ProjectCard from "./components/commons/projectcard";
 import SpotifyCard from "./components/commons/spotifycard";
 import TecCard from "./components/commons/teccard";
 import TimeCard from "./components/commons/timecard";
-import PreLoader from "./components/partials/preloader";
+import CvCard from "./components/commons/cv";
+import TemperaturaCard from "./components/commons/temperatura";
+// import PreLoader from "./components/partials/preloader";
 import { DiscordData, SpotifyData, clock, kv } from "./components/partials/constant";
 import "./styles/_main.scss";
+
 
 
 function App() {
@@ -48,7 +51,7 @@ function App() {
 
   return (
     <> 
-    <PreLoader/>
+    {/* <PreLoader/> */}
       <div className="container">
         <IntroCard/>
         <DiscordCard discord_user={discordData}/>
@@ -59,6 +62,8 @@ function App() {
         <SpotifyCard spotifyData={spotifyData}/> 
         <TecCard/>
         <MeCard/>
+        <TemperaturaCard/>
+        <CvCard/>
         <ContactmeCard/>
       </div>
       </>

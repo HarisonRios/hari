@@ -1,7 +1,6 @@
 import "./styles/_main.scss";
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
 import { BrowserRouter as Router, Routes, Route,} from 'react-router-dom';
 import App from './App';
 import Projects from './Projects';
@@ -25,45 +24,4 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   </React.StrictMode>
 );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const myRouter = createBrowserRouter([
-//   {
-//    path: "/",
-//    element: <App />,
-//    children: [
-//     {path: "/", element: <App/>, index: true},
-//     {path: "/Projects", element: <Projects/>},
-//    ]
-//  }
-// ])
-
-// ReactDOM.createRoot(document.getElementById('root')!).render(
-//   <React.StrictMode>
-//      <RouterProvider router={myRouter}>
-//       <App/>
-//     </RouterProvider> 
-//   </React.StrictMode>
-// )
 

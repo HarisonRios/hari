@@ -1,0 +1,43 @@
+.cvcard{
+  h2{
+    bottom: 50px;
+    position: relative;
+    font-size: 1rem;
+    color: #ffffff;
+    text-shadow: 0 0 1px #7d06c4, 0 0 2px #7d06c4, 0 0 3px #7d06c4, 0 0 4px #7d06c4;
+    transform: translateY(40px);
+  }
+}
+
+.itenscv{
+  position: relative;
+  align-items: center;
+  display: grid;
+  place-items: center;
+  top: 90px
+}
+
+.cvbotao-button {
+  margin-bottom: 20px;
+  display : flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.5em 0.8em 1.2em;
+  color: white;
+  background: linear-gradient(0deg, #7d06c4 0%, rgba(132,116,254,1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+}
+
+.cvbotao-button svg {
+  margin-right: 10px;
+}
+
+.cvbotao-button:hover {
+  background: linear-gradient(0deg, #1f0542 0%, #1f0542 100%);
+  border-color: #ffffff4c;
+}
