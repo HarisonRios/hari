@@ -23,7 +23,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Aba Projetos.
 - [ ] Melhorias no sistema de envio de email.
 - [ ] Melhorias no reloader (Mostar apenas reloder caso seja a primeira vez q o user entrar no portifolio.)
-- [ ] Melhorias no card do spotify (responsividade)
+- [x] Criação do card do curriculo
+- [x] Criação do card da temperatura (baseado em Widgets)  
+- [x] Melhorias no card do spotify (responsividade)
 
 
 
