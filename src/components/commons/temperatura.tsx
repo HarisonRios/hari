@@ -7,7 +7,7 @@ function TemperaturaCard() {
   const [location, setLocation] = useState({ lat: 0, lon: 0 });
   const [temperature, setTemperature] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
-  const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
+  const apiKey = "8ca17efdb773581b86d583048ed7d13e";
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
