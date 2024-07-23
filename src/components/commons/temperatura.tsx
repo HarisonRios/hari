@@ -22,8 +22,8 @@ function TemperaturaCard() {
   }, []);
 
   useEffect(() => {
-    if (location.lat !== 0 && location.lon !== 0 && apiKey) {
-      const fetchTemperature = async () => {
+    const fetchTemperature = async () => {
+      if (location.lat !== 0 && location.lon !== 0 && apiKey) {
         try {
           const response = await axios.get(
             `https://api.openweathermap.org/data/2.5/weather?lat=${location.lat}&lon=${location.lon}&units=metric&appid=${apiKey}`
@@ -31,12 +31,15 @@ function TemperaturaCard() {
           setTemperature(response.data.main.temp);
         } catch (error) {
           console.error("Erro ao obter temperatura: ", error);
-        } finally {
           setLoading(false);
         }
-      };
-      fetchTemperature();
-    }
+      } else {
+        console.error("Localização ou API Key não configurados corretamente.");
+        setLoading(false);
+      }
+    };
+
+    fetchTemperature();
   }, [location, apiKey]);
 
   const getIconForTemperature = (temp: number) => {
