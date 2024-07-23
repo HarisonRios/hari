@@ -3,16 +3,11 @@
   font-family: "Poppins", sans-serif;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 1rem;
   background-color: #00000076;
-
-
-  box-shadow: 0 0 20px, rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-
   transition: all 600ms cubic-bezier(0.1, 0, 0.1, 1);
-  transition-property: all;
 }
 
 #spotify {
@@ -21,94 +16,145 @@
   left: 15px;
   height: 30px;
   width: 30px;
-  fill: f8f8ff;
+  fill: #f8f8ff;
   z-index: 1;
 }
-
 
 .listen {
   display: grid;
   place-items: start;
-
-  p {
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-left: 60px;
-    position: relative;
-    bottom: 12px;
-  }
-
-  
-  img {
-    border:#7d06c4 2px solid;
-    border-radius: 10px;
-    margin: 5px 30px;
-    object-fit: cover;
-    height: 150px;
-    width: 150px;
-    z-index: 999;
-  }
-
-
-
-  #listentext  {
-    margin-left: 200px;
-    position: relative;
-    bottom: 140px;
-    word-break: break-word;
-    font-size: 1.2rem;
-  }
-  
-  h1{
-    text-shadow: 0 0 1px #7d06c4, 0 0 2px #7d06c4, 0 0 3px #7d06c4, 0 0 4px #7d06c4;
-  }
-
-  h2 {
-    font-size: 0.9rem;
-    color:  #7d06c4; 
-  }
-
-  h3 {
-    margin: 1;
-    font-size: 0.8rem;
-    text-shadow: 0 0 1px #7d06c4, 0 0 2px #7d06c4, 0 0 3px #7d06c4, 0 0 4px #7d06c4;
-  }
 }
 
+.listen p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 60px;
+  position: relative;
+  bottom: 12px;
+}
 
-.spotifyclosed{
+.listen img {
+  border: #7d06c4 2px solid;
+  border-radius: 10px;
+  margin: 5px 30px;
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+  z-index: 999;
+}
+
+#listentext {
+  margin-left: 200px;
+  position: relative;
+  bottom: 140px;
+  word-break: break-word;
+  font-size: 1.2rem;
+}
+
+.listen h1 {
+  text-shadow: 0 0 1px #7d06c4, 0 0 2px #7d06c4, 0 0 3px #7d06c4, 0 0 4px #7d06c4;
+}
+
+.listen h2 {
+  font-size: 0.9rem;
+  color: #7d06c4;
+}
+
+.listen h3 {
+  font-size: 0.8rem;
+  text-shadow: 0 0 1px #7d06c4, 0 0 2px #7d06c4, 0 0 3px #7d06c4, 0 0 4px #7d06c4;
+}
+
+.spotifyclosed {
   text-align: center;
   align-items: center;
-  top: 10px;
   position: relative;
-  p{
-    font-size: 2rem;
-    text-shadow: 0 0 1px #7d06c4, 0 0 2px #7d06c4, 0 0 3px #7d06c4, 0 0 4px #7d06c4;
+  top: 10px;
+}
+
+.spotifyclosed p {
+  font-size: 2rem;
+  text-shadow: 0 0 1px #7d06c4, 0 0 2px #7d06c4, 0 0 3px #7d06c4, 0 0 4px #7d06c4;
+}
+
+.spotifyclosed h2 {
+  font-size: 1rem;
+  text-shadow: 0 0 1px #7d06c4, 0 0 2px #7d06c4, 0 0 3px #7d06c4, 0 0 4px #7d06c4;
+}
+
+.spotifyclosed svg {
+  height: 45px;
+  width: 45px;
+  fill: #7d06c4;
+}
+
+@media (max-width: 768px) {
+  .spotify-card {
+    height: auto;
+    padding: 1rem;
   }
-  h2{
+
+  .listen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .listen p {
+    font-size: 0.9rem;
+    margin-left: 0;
+    bottom: 15px;
+  }
+
+  .listen img {
+    margin: 0px;
+    height: 115px;
+    width: 115px;
+  }
+
+  #listentext {
+    margin-left: 0;
+    bottom: 0;
     font-size: 1rem;
-    text-shadow: 0 0 1px #7d06c4, 0 0 2px #7d06c4, 0 0 3px #7d06c4, 0 0 4px #7d06c4;
+    text-align: center;
   }
-  svg{
-    height: 45px;
-    width: 45px;
-    fill: #7d06c4;
+
+  .listen h1, .listen h2, .listen h3 {
+    text-align: center;
   }
 }
 
+@media (max-width: 480px) {
+  .spotify-card {
+    height: auto;
+    padding: 0.5rem;
+  }
 
+  .listen img {
+    height: 100px;
+    width: 100px;
+  }
 
-@media (max-width: 599px) {
-  #listentext{
-    font-size: 1rem;
+  #listentext {
+    font-size: 0.9rem;
+  }
+
+  .spotifyclosed p {
+    font-size: 1.5rem;
+  }
+
+  .spotifyclosed h2 {
+    font-size: 0.8rem;
+  }
+
+  .spotifyclosed svg {
+    height: 35px;
+    width: 35px;
   }
 }
-
 
 .spotify-card:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
-
