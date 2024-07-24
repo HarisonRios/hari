@@ -1,5 +1,6 @@
 .temperaturacard {
-    transition: all 0.3s ease-in-out; /* Adiciona uma transição suave para o efeito de hover */
+    transition: all 0.3s ease-in-out; 
+    height: 220px;
   }
   
   .temperaturacard:hover {
@@ -15,13 +16,13 @@
   
   .temperaturacard .esquerda, 
   .temperaturacard .direita {
-    padding: 2.2rem;
+    padding: 1.6rem;
     text-align: center;
   }
   
   .temperaturacard .esquerda p {
     position: relative;
-    bottom: 15px;
+    bottom: 5px;
     font-size: 15px;
   }
   
