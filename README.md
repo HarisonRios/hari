@@ -21,13 +21,12 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [ ] Aba Projetos.
-- [ ] Melhorias no sistema de envio de email.
-- [ ] Melhorias no reloader (Mostar apenas reloder caso seja a primeira vez q o user entrar no portifolio.)
+- [x] Melhorias no sistema de envio de email.
 - [x] Criação do card do curriculo
 - [x] Criação do card da temperatura (baseado em Widgets)  
 - [x] Melhorias no card do spotify (responsividade)
 
-
+obs : Não estou atualizando muito o projeto, por conta da faculdade e das demandas.
 
 ## Tecnologias
 
