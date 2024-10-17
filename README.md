@@ -2,15 +2,15 @@
 # Portfólio - Harison Rios 💻
 # Portfólio e Site Pessoal
 
-<img src=".github/preview.png" alt="Exemplo imagem">
+<img src=".github/previewI.png" alt="Exemplo imagem">
 
 > Imagem Hari - Portifolio para Web
 
-<img src=".github/previewMobile.png" alt="Exemplo imagem">
+<img src=".github/previewII.png" alt="Exemplo imagem">
 
 > Imagem Hari - Portifolio para Dispositivos Mobile e Tablets
 
-<img src=".github/previewVersion.png" alt="Exemplo imagem">
+<img src=".github/previerIII.png" alt="Exemplo imagem">
 
 > Imagem Hari - Versões anteriores do Projeto
 
