@@ -12,9 +12,9 @@ import TecCard from "./components/commons/teccard";
 import TimeCard from "./components/commons/timecard";
 import CvCard from "./components/commons/cv";
 import TemperaturaCard from "./components/commons/temperatura";
-// import PreLoader from "./components/partials/preloader";
 import { DiscordData, SpotifyData, clock, kv } from "./components/partials/constant";
-import "./styles/_main.scss";
+// import PreLoader from "./components/partials/preloader";
+import './_main.scss';
 
 
 

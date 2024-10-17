@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import "./styles/_project.scss";
+import "./_project.scss";
+import GithubCommits from "./components/githudcommitscard";
 
 function Projects() {
   return ( 
@@ -8,6 +9,7 @@ function Projects() {
     <h1> Em construção 🚧 </h1>
     <br/>
     <Link to="/">Volte para pagina inicial</Link>
+    <GithubCommits/>
 
     </div>
 

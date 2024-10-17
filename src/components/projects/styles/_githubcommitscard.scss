@@ -1,0 +1,73 @@
+.githubcommitscard {
+  background-color: #080000d0;
+  border-radius: 10px;
+  padding: 15px;
+  color: #ffffff;
+  max-width: 800px;
+  height: 240px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+  #icon{
+    height: 25px;
+    width: 25px;
+    align-items: center;
+    position: relative;
+    bottom: 200px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+  }
+
+  .react-activity-calendar {
+    .day {
+      stroke: #444;
+      width: 5px;
+      height: 5px;
+    }
+
+    .react-activity-calendar__legend-colors {
+      li {
+        background: #39d353;
+        height: 5px;
+        width: 5px;
+      }
+    }
+
+    .react-activity-calendar__months {
+      text {
+        fill: #bbb;
+      }
+    }
+
+    .react-activity-calendar__weekdays {
+      text {
+        fill: #bbb;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+      width: 0; /* Remove a largura da barra de rolagem vertical */
+      height: 0; /* Remove a largura da barra de rolagem horizontal */
+  }
+
+  @media (max-width: 600px) {
+    padding: 10px;
+    h2 {
+      font-size: 20px;
+    }
+
+    .react-activity-calendar {
+      .day {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+}

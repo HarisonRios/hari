@@ -1,9 +1,9 @@
-import "./styles/_main.scss";
+import './_main.scss';
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route,} from 'react-router-dom';
 import App from './App';
-import Projects from './Projects';
+import Projects from './components/projects/Projects';
 import NotFound from "./NotFound";
 
 const Root = () => {
