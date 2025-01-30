@@ -5,7 +5,7 @@ function MeCard() {
     <div className="item me-card">
       <h2> Hello&nbsp;World&nbsp; <img src="https://minecraft.wiki/images/Invicon_Enchanted_Book.gif?85252" alt="Book"/>  </h2>
       <p>
-          Opa, eu sou Harison, tenho 18 anos e sou formado em Desenvolvimento de Sistemas pela ETEC de Itaquera. Atualmente estou cursando Análise e Desenvolvimento de Sistemas na São Paulo Tech School - SPTech.
+          Opa, eu sou Harison, tenho 19 anos e sou formado em Desenvolvimento de Sistemas pela ETEC de Itaquera. Atualmente estou cursando Análise e Desenvolvimento de Sistemas na São Paulo Tech School - SPTech.
         </p>          
         <br />
         <p>
